@@ -20,6 +20,8 @@ type Reviewdog struct {
 	d        DiffService
 }
 
+var Z = 14
+
 // NewReviewdog returns a new Reviewdog.
 func NewReviewdog(toolname string, p Parser, c CommentService, d DiffService) *Reviewdog {
 	return &Reviewdog{p: p, c: c, d: d, toolname: toolname}
